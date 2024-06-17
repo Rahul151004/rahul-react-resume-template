@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.app{
+    padding: 0 9%;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
