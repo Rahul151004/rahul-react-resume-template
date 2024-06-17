@@ -1,9 +1,17 @@
 import React from "react";
+import { motion } from 'framer-motion';
 import "./ProjectBox.css";
 
 export default function ProjectBox({ title, image, sentences, link }) {
   return (
-    <div className="project_box_container">
+    <motion.div
+      className="project_box_container"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="project_box_image_container">
         <img src={image} alt={title} />
       </div>
@@ -21,6 +29,6 @@ export default function ProjectBox({ title, image, sentences, link }) {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
