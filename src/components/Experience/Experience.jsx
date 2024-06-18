@@ -5,6 +5,9 @@ import ExperienceCard from './ExperienceCard/ExperienceCard';
 import c from '../../assets/c.png';
 import js from '../../assets/js.png';
 import css from '../../assets/css.png';
+import python from '../../assets/python.png';
+import cpp from '../../assets/c++.png';
+import java from '../../assets/java.png';
 
 export default function Experience() {
     const statements = [
@@ -16,6 +19,10 @@ export default function Experience() {
     ];
 
     const iconImages = [js, c, css];
+
+    const iconImages1 = [css, js, java];
+
+    const iconimages = [cpp, java, c];
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -56,14 +63,14 @@ export default function Experience() {
                     companyName='XYZ Pvt Ltd'
                     designation='SDE 1'
                     statements={statements}
-                    iconImages={iconImages}
+                    iconImages={iconImages1}
                     variants={itemVariants}
                 />
                 <ExperienceCard
                     companyName='EFG Pvt Ltd'
                     designation='SDE 1'
                     statements={statements}
-                    iconImages={iconImages}
+                    iconImages={iconimages}
                     variants={itemVariants}
                 />
             </motion.div>
