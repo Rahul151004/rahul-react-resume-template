@@ -7,7 +7,7 @@ import "./Projects.css";
 export default function Projects() {
   return (
     <motion.div
-      className="projects_container"
+      className="projects"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

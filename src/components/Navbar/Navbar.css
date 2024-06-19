@@ -28,7 +28,7 @@
 }
 
 .navbar_right > a:hover{
-    background-color: grey;
+    background-color: blue;
     cursor: pointer;
     border-radius: 8px;
 }
