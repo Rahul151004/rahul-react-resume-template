@@ -7,10 +7,11 @@ import "./Projects.css";
 export default function Projects() {
   return (
     <motion.div
-      className="projects"
+      className="projects_container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
+      id='projects'
     >
       <motion.p
         className="projects_title"
